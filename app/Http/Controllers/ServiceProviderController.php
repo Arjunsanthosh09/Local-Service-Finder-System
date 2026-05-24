@@ -20,7 +20,6 @@ class ServiceProviderController extends Controller
 
     public function register(Request $request)
     {
-        // Validate the request
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -40,7 +39,6 @@ class ServiceProviderController extends Controller
         try {
             DB::beginTransaction();
 
-            // Create user - DO NOT LOGIN
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
@@ -48,7 +46,6 @@ class ServiceProviderController extends Controller
                 'role' => 'service_provider',
             ]);
 
-            // Create service provider profile
             $provider = ServiceProvider::create([
                 'user_id' => $user->id,
                 'service_category_id' => $request->service_category_id,
@@ -67,8 +64,6 @@ class ServiceProviderController extends Controller
 
             DB::commit();
 
-            // IMPORTANT: DO NOT LOGIN THE USER HERE
-            // Auth::login($user); // <-- REMOVE THIS LINE
 
             return redirect()->route('provider.registered')
                 ->with('success', 'Registration successful! Your account is pending admin approval. You will be able to login once approved.');
@@ -93,9 +88,8 @@ class ServiceProviderController extends Controller
 {
     $provider = Auth::user()->serviceProvider;
     
-    // Check if provider is approved
     if (!$provider || !$provider->is_approved) {
-        // Logout and redirect
+       
         auth()->guard('web')->logout();
         session()->flush();
         

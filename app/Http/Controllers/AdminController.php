@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
-    // Add this to the dashboard method to get all providers and bookings
+    
     public function dashboard()
     {
         $totalUsers = User::where('role', 'user')->count();
@@ -46,7 +46,7 @@ class AdminController extends Controller
         ));
     }
 
-    // Add these new methods
+    
     public function updateProvider(Request $request, ServiceProvider $provider)
     {
         $request->validate([

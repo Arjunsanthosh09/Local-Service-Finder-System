@@ -10,17 +10,14 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\ServiceProviderMiddleware;
 
-// ==================== PUBLIC ROUTES ====================
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/search', [HomeController::class, 'search'])->name('search');
 
-// Service Provider Registration Routes (Public)
 Route::get('/provider/register', [ServiceProviderController::class, 'showRegistrationForm'])->name('provider.register');
 Route::post('/provider/register', [ServiceProviderController::class, 'register'])->name('provider.register.submit');
 Route::get('/provider/registered', [ServiceProviderController::class, 'registered'])->name('provider.registered');
 Route::get('/provider/pending', [ServiceProviderController::class, 'pending'])->name('provider.pending');
 
-// Test Routes (Remove after testing)
 Route::get('/test-provider-form', function () {
     $categories = App\Models\ServiceCategory::all();
     return view('provider.test-register', compact('categories'));
