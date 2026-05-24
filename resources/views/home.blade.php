@@ -986,9 +986,11 @@
               </div>
             </div>
           </div>
+
           <span class="status-badge status-{{ $provider->status }}">
             {{ ucfirst(str_replace('_', ' ', $provider->status)) }}
           </span>
+
         </div>
 
         <div class="provider-meta" style="margin-top:8px;">
