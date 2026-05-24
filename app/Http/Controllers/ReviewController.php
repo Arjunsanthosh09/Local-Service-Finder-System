@@ -16,12 +16,10 @@ class ReviewController extends Controller
             'comment' => 'nullable|string|max:500'
         ]);
         
-        // Check if booking is completed and belongs to user
         if ($booking->status != 'completed' || $booking->user_id != Auth::id()) {
             return back()->with('error', 'You cannot review this booking.');
         }
         
-        // Check if review already exists
         if ($booking->review) {
             return back()->with('error', 'You have already reviewed this booking.');
         }

@@ -1,59 +1,352 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🔧 Service Finder
 
-## About Laravel
+### Connect with Trusted Local Professionals
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Find electricians, plumbers, carpenters, painters, AC technicians, mechanics, cleaners, gardeners, and more in your area.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<br>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# 📌 Overview
 
-## Laravel Sponsors
+**Service Finder** is a Laravel-based web application that connects customers with verified local service professionals. The platform allows users to search, book, and review trusted service providers while enabling providers to manage bookings efficiently through a dedicated dashboard.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The system includes:
 
-### Premium Partners
+- 👤 Customer Module
+- 🔧 Service Provider Module
+- 👑 Admin Management System
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+# ✨ Features
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 👤 Customer Features
 
-## Code of Conduct
+- 🔍 Search service providers by category, city, or location
+- 📅 Book services with preferred date and time
+- ⏰ 1-hour booking expiry system
+- ⭐ Submit ratings and reviews
+- 📱 View booking history and status
+- ❌ Cancel pending bookings
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🔧 Service Provider Features
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- 📝 Professional registration system
+- ✅ Admin approval workflow
+- 📊 Booking management dashboard
+- ✔️ Accept or reject service requests
+- 🟢 Update availability status
+- 📈 Track completed services and customer reviews
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 👑 Admin Features
+
+- 📊 Complete admin dashboard
+- 👥 Manage users and providers
+- ✅ Approve or reject provider registrations
+- 🏷️ Manage service categories
+- 📋 Monitor all bookings
+- ✏️ Edit or remove providers
+
+---
+
+# 🛠️ Technology Stack
+
+| Technology | Usage |
+|------------|-------|
+| Laravel 12 | Backend Framework |
+| PHP 8.2 | Server-side Language |
+| MySQL 8.0 | Database |
+| Bootstrap 5 | Frontend UI |
+| Blade Templates | Templating Engine |
+| Laravel Sanctum | Authentication |
+| Font Awesome | Icons |
+
+---
+
+# 🚀 Installation Guide
+
+## 📋 Prerequisites
+
+Make sure the following are installed on your system:
+
+- PHP >= 8.1
+- Composer
+- MySQL >= 5.7
+- Node.js & NPM
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/service-finder.git
+cd service-finder
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+composer install
+npm install
+```
+
+### 3️⃣ Configure Environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Update your `.env` file:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=service_finder
+DB_USERNAME=root
+DB_PASSWORD=yourpassword
+```
+
+### 4️⃣ Run Migrations & Seeders
+
+```bash
+php artisan migrate
+php artisan db:seed --class=ServiceCategoriesSeeder
+```
+
+### 5️⃣ Create Admin Account
+
+```bash
+php artisan tinker
+```
+
+```php
+$admin = new App\Models\User();
+$admin->name = 'Admin User';
+$admin->email = 'admin@example.com';
+$admin->password = bcrypt('password');
+$admin->role = 'admin';
+$admin->save();
+```
+
+### 6️⃣ Build Frontend Assets
+
+```bash
+npm run build
+```
+
+### 7️⃣ Start Development Server
+
+```bash
+php artisan serve
+```
+
+---
+
+# 📖 Usage Guide
+
+## 👤 Customer Workflow
+
+1. Register an account
+2. Search for service providers
+3. Book services
+4. Track booking status
+5. Submit reviews after completion
+
+---
+
+## 🔧 Provider Workflow
+
+1. Register as a provider
+2. Wait for admin approval
+3. Login to provider dashboard
+4. Accept or reject bookings
+5. Complete services
+
+---
+
+## 👑 Admin Workflow
+
+1. Login using admin credentials
+2. Review provider registrations
+3. Manage categories and users
+4. Monitor bookings and platform activity
+
+---
+
+# 🔐 Default Credentials
+
+| Role | Email | Password |
+|------|--------|----------|
+| Admin | admin@example.com | password |
+| User | user@example.com | password |
+| Provider | Register manually | Custom |
+
+---
+
+# 📡 API Routes
+
+## 🌐 Public Routes
+
+```http
+GET  /                         Homepage
+GET  /search                   Search providers
+GET  /provider/register        Provider registration form
+POST /provider/register        Submit provider registration
+```
+
+## 🔒 Authenticated Routes
+
+```http
+GET    /dashboard
+GET    /bookings/create/{provider}
+POST   /bookings/store/{provider}
+GET    /bookings/{booking}
+POST   /bookings/{booking}/cancel
+POST   /reviews/{booking}
+```
+
+## 🔧 Provider Routes
+
+```http
+GET    /provider/dashboard
+POST   /provider/bookings/{booking}/accept
+POST   /provider/bookings/{booking}/reject
+POST   /provider/status
+```
+
+## 👑 Admin Routes
+
+```http
+GET    /admin/dashboard
+GET    /admin/providers
+POST   /admin/providers/{provider}/approve
+PUT    /admin/providers/{provider}/update
+DELETE /admin/providers/{provider}/delete
+GET    /admin/categories
+GET    /admin/bookings
+GET    /admin/users
+```
+
+---
+
+# 📁 Project Structure
+
+```text
+service-finder/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   └── Middleware/
+│   └── Models/
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/
+├── resources/
+│   └── views/
+│       ├── admin/
+│       ├── bookings/
+│       ├── layouts/
+│       ├── provider/
+│       └── user/
+├── routes/
+│   └── web.php
+├── storage/
+└── tests/
+```
+
+---
+
+# 🔒 Security Features
+
+- CSRF Protection
+- Role-based Authentication
+- Admin Approval System
+- Booking Validation
+- Protected Routes using Middleware
+
+---
+
+# 📈 Future Enhancements
+
+- 💳 Online Payment Integration
+- 📍 Live Location Tracking
+- 📱 Mobile Application
+- 🔔 Real-time Notifications
+- 💬 In-app Chat System
+- 📅 Advanced Scheduling
+
+---
+
+# 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add AmazingFeature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a Pull Request
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Author
+
+**Arjun Santhosh**
+
+- Flutter Developer & UI/UX Designer
+- Laravel & Web Developer
+
+GitHub: @yourusername  
+Email: your.email@example.com
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a star ⭐
+
+Built with ❤️ using Laravel
+
+</div>

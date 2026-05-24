@@ -20,7 +20,6 @@ class ServiceProviderMiddleware
         
         $provider = Auth::user()->serviceProvider;
         
-        // Check if provider is approved
         if (!$provider || !$provider->is_approved) {
             Auth::guard('web')->logout();
             $request->session()->invalidate();

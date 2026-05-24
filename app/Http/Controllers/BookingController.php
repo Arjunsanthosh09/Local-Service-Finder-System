@@ -10,7 +10,6 @@ use Illuminate\Support\Str;
 
 class BookingController extends Controller
 {
-    // Remove the __construct method completely
     
     public function create(ServiceProvider $provider)
     {
