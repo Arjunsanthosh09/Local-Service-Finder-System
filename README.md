@@ -338,8 +338,13 @@ This project is licensed under the **MIT License**.
 - Flutter Developer & UI/UX Designer
 - Laravel & Web Developer
 
+<<<<<<< HEAD
 GitHub: @yourusername  
 Email: your.email@example.com
+=======
+GitHub: @Arjunsanthosh09 
+Email: arjunsanthoshcc@gmail.com
+>>>>>>> 4ae020ea4682cabe95af91daf93d944789f76f48
 
 ---
 
