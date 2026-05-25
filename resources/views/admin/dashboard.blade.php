@@ -846,7 +846,7 @@
               <th>Service</th>
               <th>Date</th>
               <th>Status</th>
-              <th>Amount</th>
+              <!-- <th>Amount</th> -->
             </tr>
           </thead>
           <tbody>
@@ -870,7 +870,7 @@
                 @endphp
                 <span class="badge {{ $bc }}">{{ ucfirst($booking->status) }}</span>
               </td>
-              <td style="font-weight:600;">₹{{ number_format($booking->total_amount ?? 0) }}</td>
+              <!-- <td style="font-weight:600;">₹{{ number_format($booking->total_amount ?? 0) }}</td> -->
             </tr>
             @endforeach
           </tbody>
